@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend Developer Portfolio - HTML, CSS, JavaScript">
+  <meta name="keywords" content="Frontend Developer, Portfolio, HTML, CSS, JavaScript">
+  <meta name="author" content="Your Name">
+  <title>Your Name - Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#home" class="logo"></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="container">
+      <div class="profile-image">
+        <img src="WhatsApp Image 2025-02-01 à 20.50.05_15cc7035.jpg" alt="Your Name">
+      </div>
+      <h1>Hello, I'm <span>Mohamed Aouslim</span></h1>
+      <p>A passionate Frontend Developer specializing in HTML, CSS, and JavaScript.</p>
+      <a href="#projects" class="btn neon-btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi! I'm a frontend developer with a strong passion for creating beautiful and functional websites. I specialize in HTML, CSS, and JavaScript, and I love turning ideas into reality through code.</p>
+      <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>A responsive landing page built with HTML and CSS.</p>
+          <a href="#" class="btn neon-btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>An interactive JavaScript game.</p>
+          <a href="#" class="btn neon-btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>A portfolio website using modern CSS techniques.</p>
+          <a href="#" class="btn neon-btn">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to reach out via email or connect with me on social media.</p>
+      <div class="contact-links">
+        <a href="mailto:youremail@example.com" class="btn neon-btn"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://github.com/yourusername" target="_blank" class="btn neon-btn"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" class="btn neon-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script for Mobile Menu -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
